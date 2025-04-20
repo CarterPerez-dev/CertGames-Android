@@ -1,0 +1,102 @@
+{
+  "expo": {
+    "name": "CertGamesApp",
+    "slug": "CertGamesApp",
+    "version": "1.0.6",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "scheme": "certgamesapp",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/7bb52f0d-6798-4453-93dc-89e91a9a1210"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.certgames.app",
+      "buildNumber": "1.0.0",
+      "requireFullScreen": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to take profile photos.",
+        "ITSAppUsesNonExemptEncryption": false,
+        "UISupportedInterfaceOrientations": [
+          "UIInterfaceOrientationPortrait"
+        ],
+        "UISupportedInterfaceOrientations~ipad": [
+          "UIInterfaceOrientationPortrait"
+        ],
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.64761236473-3as2ugjri0ql0snujt83fei049dvvr4g",
+              "certgamesapp"
+            ]
+          }
+        ]
+      },
+      "associatedDomains": [
+        "applinks:certgames.com"
+      ],
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "certgames.com",
+              "pathPrefix": "/oauth-callback"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "react-native-iap",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.64761236473-3as2ugjri0ql0snujt83fei049dvvr4g"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7bb52f0d-6798-4453-93dc-89e91a9a1210"
+      }
+    },
+    "owner": "certgames",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "privacy": "unlisted",
+    "primaryColor": "#6543CC"
+  }
+}
